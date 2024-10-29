@@ -1,0 +1,13 @@
+fail-on-severity: moderate
+
+comment-summary-in-pr: always
+
+allow-licenses:
+  - BSD-2-Clause
+  - BSD-3-Clause
+  - MIT
+
+fail-on-scopes:
+  - development
+  - runtime
+  - unknown

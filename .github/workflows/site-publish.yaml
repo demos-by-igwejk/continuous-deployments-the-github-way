@@ -1,0 +1,40 @@
+name: "[Site] Publish Workshop Site"
+
+on:
+    push:
+        branches:
+            - site
+
+concurrency:
+    group: github-pages
+    cancel-in-progress: false
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    publish-github-pages:
+        env:
+            SITE_DIR: github-pages
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.publish-github-pages.outputs.page_url }}
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+            - run: python -m pip install --requirement requirements.txt
+            - run: python -m mkdocs build --clean --strict --verbose --site-dir "${SITE_DIR}" --config-file mkdocs.yaml
+            - run: |
+                  chmod -c -R +rX "${SITE_DIR}/" | while read line; do
+                    echo "::warning title=Invalid file permissions automatically fixed::$line"
+                  done
+            - uses: actions/upload-pages-artifact@v3
+              with:
+                  path: "${{env.SITE_DIR}}/"
+            - uses: actions/deploy-pages@v4
+              id: publish-github-pages

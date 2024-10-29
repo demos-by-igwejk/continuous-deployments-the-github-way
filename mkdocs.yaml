@@ -1,0 +1,164 @@
+---
+docs_dir: contents
+
+edit_uri: edit/main/docs/
+
+site_url: https://demos-by-igwejk.github.io/continuous-deployments-the-github-way
+site_name: Continuous Deployments the Github Way
+site_author: Igwe Kalu <igwejk@github.com>
+site_description: Continuous Deployments, the GitHub Way | Workshop
+
+repo_url: https://github.com/demos-by-igwejk/continuous-deployments-the-github-way/
+repo_name: GitHub Repository
+
+theme:
+  name: material
+
+  custom_dir: theme-override
+
+  icon:
+    logo: simple/githubactions
+
+  favicon: assets/img/favicon.ico
+
+  locale: en
+
+  palette:
+    # Palette toggle for automatic mode
+    - toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+      media: "(prefers-color-scheme)"
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+      media: "(prefers-color-scheme: light)"
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      media: "(prefers-color-scheme: dark)"
+
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+
+plugins:
+  - search
+
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - md_in_html
+
+  - codehilite:
+      linenums: true
+      guess_lang: false
+
+  - toc:
+      permalink: true
+      separator: "-"
+
+  - def_list
+  - footnotes
+  - meta
+
+  - pymdownx.betterem:
+      smart_enable: all
+
+  - pymdownx.caret
+
+  - pymdownx.critic:
+      mode: view
+
+  - pymdownx.details
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+
+  - pymdownx.snippets:
+      check_paths: true
+      url_download: true
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+  - pymdownx.tilde
+
+extra:
+  generator: true
+copyright: >-
+  Copyright &copy; 2024
+  <a href="https://github.com/igwejk" target="_blank" style="font-weight: bold;">
+    @igwejk
+  </a>
+  |
+  <a href="https://github.com/akbast" target="_blank" style="font-weight: bold;">
+    @akbast
+  </a>
+
+extra_javascript:
+  - assets/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - assets/javascripts/tables.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Prerequisites:
+      - Prerequisites: prerequisites/index.md
+  - Exercises:
+      - Introduction: exercises/index.md
+      - exercises/1.md
+      - exercises/2.md
+      - exercises/3.md
+  - Learning Outcome:
+      - Learning Outcome: learning-outcome/index.md

@@ -1,0 +1,20 @@
+// To learn more about this configuration, see the following references
+// - https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers#using-the-default-dev-container-configuration
+// - https://aka.ms/configure-codespace
+// - https://aka.ms/devcontainer.json
+// - https://github.com/devcontainers/templates/tree/main/src/ubuntu
+// - https://containers.dev/guide/dockerfile
+// - https://aka.ms/ghcs-default-image
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Github.copilot",
+                "github.copilot-chat",
+                "github.vscode-github-actions",
+                "GitHub.vscode-pull-request-github",
+            ]
+        }
+    },
+    "postStartCommand": "python -m pip install --requirement requirements.txt && python -m mkdocs serve --clean --strict --verbose --config-file mkdocs.yaml"
+}

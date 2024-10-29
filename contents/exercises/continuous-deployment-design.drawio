@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
+  <diagram id="ThWx0HU49jMVjdERIu0P" name="Page-1">
+    <mxGraphModel dx="1694" dy="1259" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="12" value="Code" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="40" y="-40" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Branch" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="12" vertex="1">
+          <mxGeometry y="40" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="Check" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="360" y="-40" width="119" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="Compliance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="16" vertex="1">
+          <mxGeometry y="40" width="119" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Build" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="16" vertex="1">
+          <mxGeometry y="80" width="119" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Test" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="16" vertex="1">
+          <mxGeometry y="110" width="119" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Version" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="720" y="-40" width="281" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="Backward-incompatible change: increment major version" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="20" vertex="1">
+          <mxGeometry y="40" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="Backward-compatible feature: increment minor version" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="20" vertex="1">
+          <mxGeometry y="80" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="Backward-compatible patch: increment patch" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="20" vertex="1">
+          <mxGeometry y="120" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="Release" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="-40" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="Publish release assets" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="24" vertex="1">
+          <mxGeometry y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="Announce release" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="24" vertex="1">
+          <mxGeometry y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="&lt;div&gt;pull_request&lt;/div&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="160" y="-40" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="47" value="" style="triangle;html=1;whiteSpace=wrap;fontFamily=Menlo;swimlaneFillColor=none;" parent="46" vertex="1">
+          <mxGeometry x="20" y="65" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="48" value="&lt;div&gt;push:branches[main]&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="480" y="-40" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="49" value="" style="triangle;html=1;whiteSpace=wrap;fontFamily=Menlo;swimlaneFillColor=none;" parent="48" vertex="1">
+          <mxGeometry x="20" y="65" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="50" value="&lt;div&gt;push:tags[v*.*.*]&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1001" y="-40" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="51" value="" style="triangle;html=1;whiteSpace=wrap;fontFamily=Menlo;swimlaneFillColor=none;" parent="50" vertex="1">
+          <mxGeometry x="20" y="65" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="&lt;div&gt;release:released&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1381" y="-40" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="" style="triangle;html=1;whiteSpace=wrap;fontFamily=Menlo;swimlaneFillColor=none;" parent="52" vertex="1">
+          <mxGeometry x="20" y="65" width="20" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="57" value="Deploy" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1621" y="-40" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="58" value="Verify attestation for build provenance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="57" vertex="1">
+          <mxGeometry y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="Deploy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Menlo;swimlaneFillColor=none;" parent="57" vertex="1">
+          <mxGeometry y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
