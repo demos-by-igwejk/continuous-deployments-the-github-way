@@ -62,9 +62,7 @@ The following list of **`Day 0`** operations are the prerequisites for the live 
 
     !!! note ""
 
-          - Ensure the {== **`demos-by-igwejk`** ==} organization is selected as owner
-          - Since we are sharing the organization, please prefix the repository name with your assigned username
-          - {== This point is **not** relevant for the live session. ==} Individuals who are _**not**_ a member of an enterprise may choose a `public` repository visibility to take advantage of significantly many of GitHub platform's features at no cost. (1)
+          - Individuals who are _**not**_ a member of an enterprise may choose a `public` repository visibility to take advantage of significantly many of GitHub platform's features at no cost. (1)
             { .annotate }
 
             1. :bulb: GitHub supports open-source software development by making public repositories benefit from

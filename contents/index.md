@@ -35,7 +35,7 @@ The workshop has three main parts, namely
 
 - **Exercises** Before diving into the exercises, we will get an opportunity to see what the steps to a successful outcome looks like as demonstrated by an expert user.
 
-- **Learning outcomes** At the end of the workshop, we will summarise learning achievements and give sometime for discussions. We have created a community to continue discussions beyond the live sessions, please feel free to use the Discussions to ask questions, share feedback about what you found valuable in the workshop and provide suggestions to help us continue to improve the workshop.
+- **Learning outcomes** At the end of the workshop, we will summarise learning achievements and give sometime for discussions. We have created [**a community to continue discussions**](https://github.com/orgs/community/discussions/143136) beyond the live sessions, please feel free to use the Discussions to ask questions, share feedback about what you found valuable in the workshop and provide suggestions to help us continue to improve the workshop.
 
 ## Scope of the live session
 
