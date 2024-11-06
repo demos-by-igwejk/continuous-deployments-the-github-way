@@ -4,7 +4,7 @@ docs_dir: contents
 edit_uri: edit/main/docs/
 
 site_url: https://demos-by-igwejk.github.io/continuous-deployments-the-github-way
-site_name: Continuous Deployments the Github Way
+site_name: Continuous Deployments the GitHub Way
 site_author: Igwe Kalu <igwejk@github.com>
 site_description: Continuous Deployments, the GitHub Way | Workshop
 
